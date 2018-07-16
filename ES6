@@ -1,0 +1,85 @@
+// You are writing react ha ?
+// how to get input from user in ES6 ?
+// I think we can use a package for that
+// Which package na? readline
+// const readline = require('readline')
+// const input = readline()
+// lets get familiar with es6 then we can look into UI and react
+//okey na, I still didn't watched the full tutorial in ES6, ES6 apdiye teach na
+
+// fundamentals is same in all languages
+// you know the question and login write , just write the steps below , we can convert one by one into es6 code
+// declare devices and status
+// then get input from user
+// check if the input is ON of OFF
+// then show the result
+
+//es6 la datatypes iruku but it will take dynamically , declaration ku there are 3 keywords - var, let , const
+
+//for declaring the devices and status what can we use
+// const readline=require('readline'); // do u know what this line is?declaring a constant named readline ,
+// nop you are importing the package readline and saving it in constant // this is old javascript//here why are we importing and saving in constant
+//previously there was no import in java so this was the way to use package//okey na
+import readline from 'readline'; // instead you can also do like this,okey na
+// var devices,status; // declared and initialize the values here,okey na if we use let
+let input,i; // you can initialize the values okey na
+input=readline();//is this will get the input from users? yep
+// then ?declare array or object
+// we can use array
+let devices=["fan","light"];
+let status=["ON","OFF"];
+let func1=()=>{
+  for (i=0;i<devices.length;i++)
+  {
+    if (devices[i]==input) {
+      console.log(status[i]);
+      break; // done , great. continue your second question
+      }
+  }
+}
+
+// what happened ?
+let func2=()=>{
+  for (i=0;i<devices.length;i++)
+  {
+    if (devices[i]==input) {
+      console.log(devices[i]+:+status[i]);
+
+      break;
+      }
+  }
+}
+
+
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array//just now i checked na
+// check the above site to know about es6 arrays
+// if you need any refernce just google it and choose developer.mozilla.org site, its good and nice//okey na
+
+  // what you need to check actually ?wheather a device is in on or off state..
+  // you will get on , off status based on index , how will you find the index ?s//we didn't set devices to ON or OFF states, we have to set the state of devices
+  // what are you trying to display in output ?//state of the devices
+  // which device ?the input device of user..//then next na
+   // is this condition is right ?how to check if the index are same? why do you need to check for same index
+
+}
+//that's all na
+
+//fine
+
+//now we can develop the question
+//now we get two or three inputs
+// first input  --- 1 or 2 , 1 means device status & 2 means change device status
+// if first input 1 --- get device name and display status (what we did before)
+// if first input is 2 --- get device name and status, then change device status
+
+// did you get the question ?got it na
+// how will you proceed
+//write two functions 1 and 2//1 will follow the above procedures and for 2 we have to write a new functions
+// fine , change the aboe code itself
+
+// did you know about break statement ?//yeah na
+// can we use break in that for loop ?
+//for changing the device status?
+// we are doing for loop , if we have 1000 devices then it will check all the 1000 devices eventhough if we get the matching device before that
+// can you understand what i am explaning ?yeah ok na i was thinking that for will automatically break if matching is obtained// it will not (in all lanuage)
+//okey na // use break when we get a match i changed it
