@@ -53,6 +53,8 @@ switch (choice){
 		  }
 		}
 		break;
+	default:
+	console.log("either device not switched");
 }
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array//just now i checked na
 // check the above site to know about es6 arrays
