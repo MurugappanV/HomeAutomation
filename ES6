@@ -20,37 +20,40 @@
 // const readline=require('readline'); // do u know what this line is?declaring a constant named readline ,
 // nop you are importing the package readline and saving it in constant // this is old javascript//here why are we importing and saving in constant
 //previously there was no import in java so this was the way to use package//okey na
-import readline from 'readline'; // instead you can also do like this,okey na
-// var devices,status; // declared and initialize the values here,okey na if we use let
-let input,i; // you can initialize the values okey na
-input=readline();//is this will get the input from users? yep
-// then ?declare array or object
-// we can use array
+import readline from 'readline'; 
+let input,i,choice; 
 let devices=["fan","light"];
 let status=["ON","OFF"];
-let func1=()=>{
-  for (i=0;i<devices.length;i++)
-  {
-    if (devices[i]==input) {
-      console.log(status[i]);
-      break; // done , great. continue your second question
-      }
-  }
+choice=readline();
+switch (choice){
+	case '1':
+		let func1=()=>{
+		  input=readline();
+		  for (i=0;i<devices.length;i++)
+		  {
+		    if (devices[i]==input) {
+		      console.log(status[i]);
+		      break; 
+		      }
+		  }
+		}
+		break;
+  	case '2':
+		let func2=()=>{
+		  input=readline();
+		  for (i=0;i<devices.length;i++)
+		  {
+		  	input=readline();
+		    if (devices[i]==input) {
+		      console.log(devices[i]+":"+status[i]);
+		      status[i++];
+		      console.log(devices[i]+"is now switched "+status[i]);
+		      break;
+		      }
+		  }
+		}
+		break;
 }
-
-// what happened ?
-let func2=()=>{
-  for (i=0;i<devices.length;i++)
-  {
-    if (devices[i]==input) {
-      console.log(devices[i]+:+status[i]);
-
-      break;
-      }
-  }
-}
-
-
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array//just now i checked na
 // check the above site to know about es6 arrays
 // if you need any refernce just google it and choose developer.mozilla.org site, its good and nice//okey na
@@ -61,7 +64,7 @@ let func2=()=>{
   // which device ?the input device of user..//then next na
    // is this condition is right ?how to check if the index are same? why do you need to check for same index
 
-}
+
 //that's all na
 
 //fine
