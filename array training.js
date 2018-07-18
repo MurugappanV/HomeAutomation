@@ -1,37 +1,33 @@
-// are u there bro
-// yeah
-// array program write pannava
-// hmmm
-// i think first you can try to filter positive numbers program   okey na
-// save this file with .js extension
-var a1=[-10,4,-5];
-var a=[];
-for (var i = 0; i < a1.length; i++) {
-  if (a1[i]>0) {
-    a.push(a1[i]);
-  }
-}
-//is it correct na , yeah fine great
-// continue to second one
-
+//open this link and try your program http://rextester.com/l/nodejs_online_compiler
 
 var a1=[45,34,76];
-var a2=[12,55,25];
+var a2=[12,55,25, 54];
 var a=[];
-for (var i = 0; i < a1.length; i++) {
-    if (a1[i]!=a2[j]){
-      a.push(a1[i]);
-      a.push(a2[i]);
-    }
-    else{
-      a.push(a1[i]);
-    }
+var length;
+if (a1.length>a2.length) {
+ length=a1.length;
+}else{
+  length=a2.length;
 }
+for (var i = 0; i < length; i++) {
+    console.log(i + " " + a1[i] + " " + a2[i]);
+    !!a1[i] && a.push(a1[i]);
+    !!a2[i] &&  a.push(a2[i]);
+}
+
 for (var i = 0; i < a.length; i++) {
-  for (var j = i+1; i < a.length; j++) {
-    if (a[i]<a[j]) {
-      a.unshift(a[i]);
+  for (var j = i+1; j < a.length; j++) {
+    if (a[i]>a[j]) {
+      var temp=a[i];
+      a[i]=a[j];  // error in this line
+      a[j]=temp;   // error in this line
     }
   }
 }
-console.log(a[]);
+console.log(a);
+
+// fine , done !!!!
+//program ipdi na potathe illa na!!!
+
+
+// vera eppadi program pannuvinga ?
