@@ -26,8 +26,7 @@ for (var i = 0; i < a.length; i++) {
 }
 console.log(a);
 
-// fine , done !!!!
-//program ipdi na potathe illa na!!!
+// questions pakka easy ha irukum but implementation wont be that easy
+//yeah na,next what na?
 
-
-// vera eppadi program pannuvinga ?
+// react start pannalam
