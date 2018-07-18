@@ -18,7 +18,6 @@ for (var i = 0; i < a1.length; i++) {
 var a1=[45,34,76];
 var a2=[12,55,25];
 var a=[];
-var pivot;
 for (var i = 0; i < a1.length; i++) {
     if (a1[i]!=a2[j]){
       a.push(a1[i]);
