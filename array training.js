@@ -20,11 +20,19 @@ var a2=[12,55,25];
 var a=[];
 var pivot;
 for (var i = 0; i < a1.length; i++) {
-  for (var j = 0; j < a2.length; j++) {
     if (a1[i]!=a2[j]){
-      a.push(a2[j]);
+      a.push(a1[i]);
+      a.push(a2[i]);
     }
-    a.unshift(a1[i]);
+    else{
+      a.push(a1[i]);
+    }
+}
+for (var i = 0; i < a.length; i++) {
+  for (var j = i+1; i < a.length; j++) {
+    if (a[i]<a[j]) {
+      a.unshift(a[i]);
+    }
   }
 }
-//no idea na
+console.log(a[]);
