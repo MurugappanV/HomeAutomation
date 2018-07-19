@@ -19,14 +19,14 @@ for (var i = 0; i < a.length; i++) {
   for (var j = i+1; j < a.length; j++) {
     if (a[i]>a[j]) {
       var temp=a[i];
-      a[i]=a[j];  // error in this line
-      a[j]=temp;   // error in this line
+      a[i]=a[j];
+      a[j]=temp;
     }
   }
 }
 console.log(a);
 
-// questions pakka easy ha irukum but implementation wont be that easy
-//yeah na,next what na?
-
-// react start pannalam
+// create a html and js file
+// start from step 1 in this link https://reactjs.org/docs/add-react-to-a-website.html
+//what is JSX?//
+//panite na
