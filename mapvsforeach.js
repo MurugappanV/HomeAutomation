@@ -20,3 +20,4 @@ b.forEach(function (no) {
     }
 });
 console.log(new_b);
+
