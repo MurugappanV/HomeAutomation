@@ -2,13 +2,62 @@
 	background-color: black;
 	
 }
-.rotate
+.norotate{
+		
+}
+.rotate0
 {
-  -webkit-animation:spin 0.1s linear infinite;
-  -moz-animation:spin 0.1s linear infinite;
-  animation:spin 0.1s linear infinite;
+  -webkit-animation:spin 1.5s linear infinite;
+  -moz-animation:spin 1.5s linear infinite;
+  animation:spin 1.5s linear infinite;
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.rotate1
+{
+  -webkit-animation:spin_1 1s linear infinite;
+  -moz-animation:spin_1 1s linear infinite;
+  animation:spin_1 1s linear infinite;
+}
+
+@-moz-keyframes spin_1 { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin_1 { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin_1 { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.rotate2
+{
+  -webkit-animation:spin_2 0.5s linear infinite;
+  -moz-animation:spin_2 0.5s linear infinite;
+  animation:spin_2 0.5s linear infinite;
+}
+
+@-moz-keyframes spin_2 { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin_2 { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin_2 { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+.rotate3
+{
+  -webkit-animation:spin_3 0.3s linear infinite;
+  -moz-animation:spin_3 0.3s linear infinite;
+  animation:spin_3 0.3s linear infinite;
+}
+
+@-moz-keyframes spin_3 { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin_3 { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin_3 { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+.rotate4
+{
+  -webkit-animation:spin_4 0.1s linear infinite;
+  -moz-animation:spin_4 0.1s linear infinite;
+  animation:spin_4 0.1s linear infinite;
+}
+
+@-moz-keyframes spin_4 { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin_4 { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin_4 { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
